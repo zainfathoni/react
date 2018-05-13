@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const firstName = 'Pejuang'
-const lastName = 'Kode'
+function greet(name) {
+  return <h1>Hello, {name || 'Kisanak'}!</h1>
+}
 
 ReactDOM.render(
-  <h1>Hello, {firstName + ' ' + lastName}!</h1>,
+  greet('Pejuang'),
   document.getElementById('root')
 )
