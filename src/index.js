@@ -5,13 +5,13 @@ class Greet extends React.Component {
   render() {
     return (
       <h1>
-        Hello, {this.props.name || 'Kisanak'}!
+        Hello, {this.props.names[0] || 'Kisanak'}!
       </h1>
     )
   }
 }
 
 ReactDOM.render(
-  <Greet name='Pejuang' />,
+  <Greet names={['Pejuang', 'Kode', 'Indonesia']} />,
   document.getElementById('root')
 )
